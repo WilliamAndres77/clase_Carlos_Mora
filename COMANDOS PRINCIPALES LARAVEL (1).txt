@@ -1,0 +1,37 @@
+Los comandos principales se pueden hallar en la documentación oficial en:
+https://laravel.com/docs/8.x/installation
+
+-------------------------------------------
+Algunos de los comandos pricipales son:
+
+En algunos computadores no funcionan bien los comandos para crear un proyecto, en esos casos puede usar:
+composer create-project --prefer-dist laravel/laravel NombreProyecto
+
+1) Instalar Laravel de forma global para poderlo usar en cualquier proyecto:
+composer global require laravel/installer
+
+2) Crear nuevo proyecto en la ruta especificada en la terminal:
+laravel new NombreProyecto
+
+3) Crear un controlado básico:
+php artisan make:controller nombreCOntrolador
+
+4) Crear un controlador de recursos para controlar 1 tabla:
+php artisan make:controller nombreControlador --resource
+
+5) Crear un modelo de tabla con sus respectiva migración:
+php artisan make:model NOMBREMODELO -m
+
+
+6) Crear migración para añadir un nuevo campo a una tabla de la base de datos:
+php artisan make:migration add_imagen_to_cursos
+
+7) Ejecutar una migración (para pasar todo del código php de Laravel a la base de datos real):
+php artisan migrate
+
+8) Eliminar todas las migraciones hechas:
+php artisan migrate:reset
+
+9) Revertir la última migración:
+php artisan migrate:rollback
+
